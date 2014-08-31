@@ -1,0 +1,50 @@
+body{
+	margin-left: 20px; 
+	text-align:center;
+	font-size: 16px;
+	font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+td{height:20px;}
+table{
+border-spacing:5px;
+}
+table tr td:empty {
+    width: 50px;
+}
+table.center{
+	margin-left:auto;
+	margin-right:auto;
+}
+.grid {
+  display: box;
+  display: -webkit-flex;
+  display: flex;
+}
+.fluid {
+  box-flex: 1;
+}
+div#menu{
+	border: 6px solid;
+	border-color:#D59915;
+	text-align:center;
+	width:1000px;
+	margin-left:60px;
+} 
+div#barchart{
+	width:500px;
+}
+div#description{
+	border: 6px solid;
+	border-color:#303390;
+	text-align:center;
+	width:1000px;
+	margin-right:60px;
+	padding:20px;
+}
+#wiblogo{
+	width:300px;
+}
+p#contact{
+	text-align:right;
+	margin-right:60px;
+}
