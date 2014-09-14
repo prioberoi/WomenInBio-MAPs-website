@@ -9,19 +9,16 @@ var ideaTypes = ["Topics", "Events", "Formats"];
 d3.json(script_link + topics, function(error, json) {
 	if (error) return console.warn(error);
 	data = json;
-	console.log(data.Sheet1);
 	counts.push(data.Sheet1.length);
 	
 	d3.json(script_link + events, function(error, json) {
 		if (error) return console.warn(error);
 		data2 = json;
-		console.log(data2.Sheet1);
 		counts.push(data2.Sheet1.length);
 		
 		d3.json(script_link + formats, function(error, json) {
 			if (error) return console.warn(error);
 			data3 = json;
-			console.log(data3.Sheet1);
 			counts.push(data3.Sheet1.length);
 			
 			//width and height
@@ -116,8 +113,6 @@ d3.json(script_link + topics, function(error, json) {
 			   .attr("font-size", "15px")
 			   .attr("fill", "grey")
 			   .attr("text-anchor", "middle");
-			
-			console.log(counts)
 			
 		})
 	})
